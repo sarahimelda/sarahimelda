@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portofolio Sarah Imelda, S.M</title>
+<meta name="description" content="Portofolio Sarah Imelda, S.M. Lulusan S1 Manajemen Universitas Nasional Pasim Bandung.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--red:#d21a12;--ink:#111;--bg:#fff;--soft:#f6f2f2;--navy:#02024a}
+@media (prefers-color-scheme:dark){:root{--ink:#f2f2f2;--bg:#141212;--soft:#1e1b1b}}
+*{box-sizing:border-box}
+html{scroll-behavior:auto}
+body{margin:0;background:var(--bg);color:var(--ink);font:300 clamp(15px,1.25vw,18px)/1.7 Poppins,system-ui,sans-serif}
+img{max-width:100%;display:block}
+section{max-width:1180px;margin:0 auto;padding:clamp(40px,6vw,80px) clamp(18px,4vw,40px)}
+h1,h2{font:400 clamp(52px,9vw,128px)/.9 "Bebas Neue",Impact,sans-serif;color:var(--red);margin:0;text-transform:uppercase;letter-spacing:.01em}
+h2{font-size:clamp(46px,8vw,104px)}
+.saya{font:400 clamp(40px,6.5vw,92px)/1 "Great Vibes",cursive;color:var(--ink);margin-left:-.35em;position:relative;top:.1em}
+.arrow{width:clamp(34px,5vw,64px);height:auto;fill:var(--red);flex:none}
+.head{display:flex;align-items:flex-end;gap:.2em;flex-wrap:wrap;margin-bottom:clamp(20px,4vw,44px)}
+h3{font:600 1rem/1.3 Poppins,sans-serif;margin:0 0 .6em;display:flex;gap:.6em;align-items:center;text-transform:uppercase}
+h3::before{content:"";width:22px;height:16px;flex:none;background:var(--red);clip-path:polygon(0 40%,60% 40%,45% 0,60% 0,100% 50%,60% 100%,45% 100%,60% 60%,0 60%)}
+ul{margin:0;padding-left:1.2em}
+li{text-transform:uppercase;margin:.1em 0}
+p{margin:0 0 1em}
+.cap{font:600 .85rem/1.4 Poppins,sans-serif;text-transform:uppercase;text-align:center;margin-top:.7em}
+.grid{display:grid;gap:clamp(18px,3vw,36px)}
+.hero{display:grid;grid-template-columns:minmax(220px,1fr) 1.6fr;gap:clamp(20px,4vw,48px);align-items:end}
+.hero img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top}
+.hero p{text-align:justify;margin-top:1.2em}
+.edu{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:clamp(14px,3vw,32px);align-items:center}
+.edu img.ph{width:100%;aspect-ratio:3/4;object-fit:cover}
+.logos{display:flex;gap:clamp(16px,4vw,48px);align-items:center;margin-left:auto}
+.logos img{height:clamp(70px,10vw,130px);width:auto}
+.edu h3{margin-top:1.4em}
+.skills{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(24px,5vw,60px)}
+.tools{display:flex;flex-wrap:wrap;gap:clamp(14px,3vw,30px);align-items:center}
+.tools img{height:clamp(70px,10vw,130px);width:auto}
+.canva{width:clamp(80px,11vw,140px);aspect-ratio:1;border-radius:50%;background:linear-gradient(135deg,#00c4cc,#7d2ae8);display:grid;place-items:center;color:#fff;font:400 clamp(26px,3.6vw,44px)/1 "Great Vibes",cursive}
+.lang{display:flex;gap:clamp(20px,4vw,50px);flex-wrap:wrap;align-items:center}
+.lang figure{margin:0;display:flex;align-items:center;gap:14px}
+.flag{width:clamp(80px,11vw,130px);aspect-ratio:1;border-radius:50%;overflow:hidden;flex:none;border:1px solid #8884}
+.flag svg{width:100%;height:100%;display:block}
+.ring{--p:99;width:clamp(76px,10vw,120px);aspect-ratio:1;border-radius:50%;background:conic-gradient(var(--red) calc(var(--p)*1%),#3b3b3f 0);display:grid;place-items:center;flex:none}
+.ring b{width:76%;aspect-ratio:1;border-radius:50%;background:#efece3;color:#333;display:grid;place-items:center;font:400 clamp(24px,3.4vw,40px)/1 "Bebas Neue",sans-serif}
+.kerja{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(18px,3vw,36px)}
+.kerja .role{grid-column:1/-1}
+.kerja .role strong{font-weight:600;display:block;font-size:1.15em;text-transform:uppercase}
+.kerja img,.org img{width:100%;object-fit:cover;aspect-ratio:3/2}
+.col{display:grid;gap:clamp(14px,2.5vw,28px);align-content:start}
+.org{grid-template-columns:repeat(4,1fr)}
+.org img{aspect-ratio:3/4}
+.proyek{display:grid;grid-template-columns:minmax(200px,.8fr) 1.7fr;gap:clamp(20px,4vw,50px);align-items:start}
+.proyek img{border:1px solid #8886;width:100%}
+.proyek h2{margin-bottom:.3em}
+.proyek h3{font-size:clamp(1rem,1.9vw,1.4rem)}
+.latih{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(20px,4vw,56px);align-items:center}
+.latih h3{color:var(--red);font-size:clamp(1.3rem,2.6vw,2.1rem);font-weight:600;margin:0}
+.latih h3::before{display:none}
+.latih .sub{font-size:clamp(1.1rem,2.2vw,1.8rem);color:var(--red);text-transform:uppercase;margin-bottom:.8em}
+.latih p{text-align:justify}
+.latih img{width:100%;box-shadow:0 2px 14px #0003}
+.sert{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,5vw,60px)}
+.sert img{border:clamp(4px,.7vw,8px) solid var(--red);width:100%}
+.sert .cap{color:var(--red);font-weight:300;font-size:clamp(.95rem,1.9vw,1.6rem)}
+.end{position:relative;max-width:none;padding:0;min-height:min(80vh,720px);display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(#fff 0,#fff 30%,var(--navy) 100%);overflow:hidden;color:#111}
+.end h2{font-size:clamp(64px,15vw,210px);text-align:center;padding:.1em .2em 0;position:relative;z-index:2}
+.end img{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:min(520px,70%);opacity:.6;mask-image:linear-gradient(#0000,#000 40%);-webkit-mask-image:linear-gradient(#0000,#000 40%)}
+.contact{position:relative;z-index:2;display:flex;flex-wrap:wrap;gap:14px 36px;justify-content:center;padding:2em 1em;font-weight:600;font-size:clamp(.8rem,1.3vw,1.05rem)}
+.contact a{color:#111;text-decoration:none;display:flex;align-items:center;gap:.5em}
+.contact a:hover{text-decoration:underline}
+.contact a:focus-visible,a:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.contact svg{width:1.7em;height:1.7em;flex:none}
+@media(max-width:760px){
+ .hero,.skills,.kerja,.proyek,.latih,.sert{grid-template-columns:1fr}
+ .edu{grid-template-columns:1fr 1fr}.edu .txt{grid-column:1/-1}.logos{grid-column:1/-1;margin:0}
+ .org{grid-template-columns:1fr 1fr}
+ .hero img{max-width:340px}
+ .end{background:linear-gradient(#fff 0,#fff 20%,var(--navy) 100%)}
+ .contact a{color:#fff}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+html{scroll-padding-top:70px}
+#bar{position:fixed;top:0;left:0;height:4px;width:0;background:var(--red);z-index:60}
+nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid #8883}
+nav ul{list-style:none;margin:0 auto;padding:0 12px;max-width:1280px;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+nav li{margin:0;text-transform:none}
+nav a{display:block;padding:14px 12px;color:var(--ink);text-decoration:none;font:600 .82rem/1 Poppins,sans-serif;white-space:nowrap;border-bottom:3px solid transparent;transition:color .2s,border-color .2s}
+nav a:hover{color:var(--red)}
+nav a.on{color:var(--red);border-color:var(--red)}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .7s}
+.rv.in{opacity:1;transform:none}
+main img.zoom{cursor:zoom-in;transition:transform .35s,box-shadow .35s}
+main img.zoom:hover{transform:scale(1.03);box-shadow:0 8px 28px #0004}
+.tools img,.canva{transition:transform .3s}.tools img:hover,.canva:hover{transform:translateY(-6px) rotate(-4deg)}
+#lb{position:fixed;inset:0;background:#000d;display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
+#lb.open{display:flex}
+#lb img{max-width:min(94vw,1100px);max-height:86vh;object-fit:contain}
+#lb p{position:absolute;bottom:14px;left:0;right:0;text-align:center;color:#fff;margin:0;font-size:.85rem}
+#lb button{position:absolute;background:var(--red);color:#fff;border:0;width:46px;height:46px;border-radius:50%;font-size:22px;cursor:pointer}
+#lb .x{top:16px;right:16px}#lb .pv{left:14px}#lb .nx{right:14px}
+#top{position:fixed;right:18px;bottom:18px;width:48px;height:48px;border:0;border-radius:50%;background:var(--red);color:#fff;font-size:22px;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s;z-index:55}
+#top.show{opacity:1;pointer-events:auto}
+button:focus-visible{outline:3px solid #fff;outline-offset:2px}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><symbol id="ar" viewBox="0 0 100 100"><path d="M10 0h80v20H44l50 50-14 14L30 34v46H10z" transform="rotate(0)"/></symbol></svg>
+
+<div id="bar"></div>
+<nav aria-label="Navigasi utama"><ul>
+<li><a href="#beranda">Beranda</a></li><li><a href="#pendidikan">Pendidikan</a></li><li><a href="#keterampilan">Keterampilan</a></li><li><a href="#keahlian">Keahlian</a></li><li><a href="#pengalaman-kerja">Pengalaman Kerja</a></li><li><a href="#organisasi">Organisasi</a></li><li><a href="#proyek">Proyek</a></li><li><a href="#pelatihan-1">Pelatihan 1</a></li><li><a href="#pelatihan-2">Pelatihan 2</a></li><li><a href="#sertifikat">Sertifikat</a></li><li><a href="#kontak">Kontak</a></li>
+</ul></nav>
+<main>
+<section class="hero" id="beranda" aria-labelledby="t-hero">
+ <img src="images/hero.jpg" alt="Foto Sarah Imelda" width="360" height="640">
+ <div>
+  <div class="head" style="margin-bottom:0">
+   <h1 id="t-hero">Hallo<span class="saya">Saya</span><br>Sarah Imelda</h1>
+   <svg class="arrow" viewBox="0 0 100 100" aria-hidden="true"><path d="M5 5h90v90H75V39L16 98 2 84l59-59H5z"/></svg>
+  </div>
+  <p>Saya merupakan lulusan S1 Manajemen dari Universitas Nasional Pasim Bandung dengan IPK 3,38 dan memiliki pengalaman magang di BPSDM PROVINSI JAWA BARAT dalam mendukung pelaksanaan pelatihan dan pengembangan kompetensi Aparatur Sipil Negara (ASN). Saya memiliki pengalaman berorganisasi dan kepemimpinan yang membantu saya mengembangkan kemampuan komunikasi, koordinasi, kerjasama tim, serta manajemen waktu. Saya juga memiliki ketertarikan pada bidang marketing, khususnya strategi pemasaran, pengembangan bisnis, analisis perilaku konsumen, bidang human resources dan administrasi operasional. Saya terbiasa bekerja secara terstruktur, teliti, disiplin, bertanggung jawab dan memiliki kemauan untuk terus mempelajari hal baru.</p>
+ </div>
+</section>
+
+<section id="pendidikan">
+ <div class="head"><h2>Pendidikan<span class="saya">Saya</span></h2><svg class="arrow" viewBox="0 0 100 100" aria-hidden="true"><path d="M5 5h90v90H75V39L16 98 2 84l59-59H5z"/></svg>
+  <div class="logos"><img src="images/logo-ma.jpg" alt="Logo Pondok Pesantren Al-Basyariyah"><img src="images/logo-univ.jpg" alt="Logo Universitas Nasional Pasim"></div></div>
+ <div class="edu">
+  <img class="ph" src="images/edu1.jpg" alt="Foto Sarah Imelda saat sekolah">
+  <img class="ph" src="images/edu2.jpg" alt="Foto Sarah Imelda saat wisuda">
+  <div class="txt">
+   <h3>MA Al-Basyariyah</h3><p>Jurusan Ilmu Pengetahuan Sosial<br>Lulusan 2015-2022</p>
+   <h3>Universitas Nasional Pasim Bandung</h3><p>Jurusan Program Studi Manajemen<br>Lulusan 2022-2026</p>
+  </div>
+ </div>
+</section>
+
+<section id="keterampilan">
+ <div class="head"><h2>Keterampilan<span class="saya">Saya</span></h2><svg class="arrow" viewBox="0 0 100 100" aria-hidden="true"><path d="M5 5h90v90H75V39L16 98 2 84l59-59H5z"/></svg></div>
+ <div class="skills">
+  <div><h3>Keterampilan Personal</h3>
+   <ul><li>Communication</li><li>Leadership &amp; Teamwork</li><li>Creative Thinking</li><li>Attention to Detail</li><li>Time Management</li><li>Adaptability &amp; Willings to Learn</li></ul></div>
+  <div><h3>Keterampilan Teknis</h3>
+   <div class="tools">
+    <img src="images/word.png" alt="Microsoft Word"><img src="images/excel.png" alt="Microsoft Excel"><img src="images/ppt.png" alt="Microsoft PowerPoint">
+    <div class="canva" role="img" aria-label="Canva">Canva</div><img src="images/capcut.png" alt="CapCut">
+   </div></div>
+ </div>
+</section>
+
+<section id="keahlian">
+ <div class="head"><h2>Keahlian<span class="saya">Saya</span></h2><svg class="arrow" viewBox="0 0 100 100" aria-hidden="true"><path d="M5 5h90v90H75V39L16 98 2 84l59-59H5z"/></svg></div>
+ <div class="skills">
+  <div><h3>Keahlian Bidang</h3>
+   <ul><li>Digital Marketing</li><li>Sosial Media Management</li><li>Market Research</li><li>Marketing Strategy</li><li>E-Commerce</li><li>Data Entry &amp; Data Management</li><li>Training Administration</li></ul></div>
+  <div><h3>Kemampuan Bahasa</h3>
+   <div class="lang">
+    <figure><span class="flag" role="img" aria-label="Bahasa Indonesia"><svg viewBox="0 0 2 2"><rect width="2" height="1" fill="#f00"/><rect y="1" width="2" height="1" fill="#fff"/></svg></span><span class="ring" style="--p:99" role="img" aria-label="Bahasa Indonesia 99 persen"><b>99%</b></span></figure>
+    <figure><span class="flag" role="img" aria-label="Bahasa Inggris"><svg viewBox="0 0 60 60" preserveAspectRatio="xMidYMid slice"><rect width="60" height="60" fill="#012169"/><path d="M0 0l60 60M60 0L0 60" stroke="#fff" stroke-width="10"/><path d="M0 0l60 60M60 0L0 60" stroke="#c8102e" stroke-width="4"/><path d="M30 0v60M0 30h60" stroke="#fff" stroke-width="16"/><path d="M30 0v60M0 30h60" stroke="#c8102e" stroke-width="9"/></svg></span><span class="ring" style="--p:50" role="img" aria-label="Bahasa Inggris 50 persen"><b>50%</b></span></figure>
+   </div></div>
+ </div>
+</section>
+
+<section id="pengalaman-kerja">
+ <div class="head"><h2>Pengalaman Kerja<span class="saya">Saya</span></h2><svg class="arrow" viewBox="0 0 100 100" aria-hidden="true"><path d="M5 5h90v90H75V39L16 98 2 84l59-59H5z"/></svg></div>
+ <div class="kerja">
+  <div class="role"><h3>Staf Pengembangan Kompetensi Teknis Inti (Magang)</h3><p>BPSDM PROVINSI JAWA BARAT<br>JULI - SEPTEMBER 2025</p></div>
+  <figure style="margin:0"><img src="images/kerja-offline.jpg" alt="Program pelatihan ASN secara tatap muka"><figcaption class="cap">Mengamati program pelatihan Aparatur Sipil Negara (ASN) secara offline (tatap muka)</figcaption></figure>
+  <div class="col">
+   <figure style="margin:0"><img src="images/kerja-rapat.jpg" alt="Rapat penyusunan acara pelatihan"><figcaption class="cap">Rapat penyusunan acara untuk pelaksanaan Pelatihan Kelayakan Proyek bagi Aparatur Sipil Negara (ASN)</figcaption></figure>
+   <figure style="margin:0"><img src="images/kerja-online.jpg" alt="Pelatihan ASN secara online"><figcaption class="cap">Memonitor jalan nya program Pelatihan Kelayakan Proyek bagi Aparatur Sipil Negara (ASN) secara online</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section id="organisasi">
+ <div class="head"><h2>Pengalaman Organisasi<span class="saya">Saya</span></h2><svg class="arrow" viewBox="0 0 100 100" aria-hidden="true"><path d="M5 5h90v90H75V39L16 98 2 84l59-59H5z"/></svg></div>
+ <div class="grid org">
+  <figure style="margin:0"><img src="images/org1.jpg" alt="Anggota Himpunan Fakultas Ekonomi"><figcaption class="cap">Anggota Himpunan Fakultas Ekonomi Periode 2023-2025</figcaption></figure>
+  <figure style="margin:0"><img src="images/org2.jpg" alt="Ketua Divisi Minat dan Bakat"><figcaption class="cap">Ketua Divisi Minat dan Bakat Himpunan Fakultas Ekonomi 2024-2025</figcaption></figure>
+  <figure style="margin:0"><img src="images/org3.jpg" alt="Ketua Pelaksana HIMA Sport"><figcaption class="cap">Ketua Pelaksana HIMA Sport Antar Fakultas 2025</figcaption></figure>
+  <figure style="margin:0"><img src="images/org4.jpg" alt="Master of Ceremony acara makrab"><figcaption class="cap">Master of Ceremony Acara Makrab Fakultas Ekonomi 2025</figcaption></figure>
+ </div>
+</section>
+
+<section class="proyek" id="proyek">
+ <div><h2>Proyek</h2><img src="images/jurnal.jpg" alt="Surat penerimaan naskah Jurnal Doktor Manajemen"></div>
+ <div>
+  <h3>Publikasi Jurnal<br>Influence of Affiliate Marketing and Consumer Trust on Purchase Decisions in Users of the TikTok Shop Platform at the National University of Pasim Bandung</h3>
+  <p>Merancang metodologi penelitian riset kuantitatif, mengumpulkan data primer mahasiswa, dan melakukan data analisis statistik. Bertanggung jawab penuh menyusun manuskrip ilmiah dalam bahasa inggris.</p>
+  <p><strong style="font-weight:600">Pencapaian:</strong><br>Berhasil mempublikasikan artikel terakreditasi sinta 3 pada jurnal Doktor Manajemen (Vol. 10 Nomor 1 Periode Tahun 2027).</p>
+ </div>
+</section>
+
+<section class="latih" id="pelatihan-1">
+ <div><div class="head" style="margin-bottom:.4em"><h2>Pelatihan 1</h2><svg class="arrow" viewBox="0 0 100 100" aria-hidden="true"><path d="M5 5h90v90H75V39L16 98 2 84l59-59H5z"/></svg></div>
+  <h3>MarkPlus Institute 2025</h3><div class="sub" style="font-weight:300">Entrepreneurial Marketing</div>
+  <p>Mengikuti pelatihan Entrepreneurial Marketing untuk meningkatkan pemahaman mengenai strategi pemasaran yang berorientasi pada peluang bisnis, inovasi, dan kebutuhan pelanggan. Pelatihan ini mendukung pengembangan kemampuan dalam memahami pasar, mengidentifikasi peluang usaha, serta menyusun strategi pemasaran yang efektif dan berorientasi pada pertumbuhan bisnis.</p></div>
+ <img src="images/sert-markplus.jpg" alt="Sertifikat Entrepreneurial Marketing MarkPlus Institute">
+</section>
+
+<section class="latih" id="pelatihan-2">
+ <div><div class="head" style="margin-bottom:.4em"><h2>Pelatihan 2</h2><svg class="arrow" viewBox="0 0 100 100" aria-hidden="true"><path d="M5 5h90v90H75V39L16 98 2 84l59-59H5z"/></svg></div>
+  <h3>E-Marketing Institute 2026</h3><div class="sub" style="font-weight:300">Search Engine Optimization</div>
+  <p>Menyelesaikan pelatihan dan ujian online Search Engine Optimization (SEO) untuk memahami teknis optimisasi website agar lebih mudah ditemukan di mesin pencari. Mencakup pemahaman dasar mengenai penggunaan kata kunci, optimasi konten, serta strategi SEO untuk meningkatkan visibilitas website dan menarik trafik organik sebagai bagian dari pemasaran digital.</p></div>
+ <img src="images/sert-seo.jpg" alt="Sertifikat SEO eMarketing Institute">
+</section>
+
+<section id="sertifikat">
+ <div class="head"><h2>Sertifikat</h2><svg class="arrow" viewBox="0 0 100 100" aria-hidden="true"><path d="M5 5h90v90H75V39L16 98 2 84l59-59H5z"/></svg></div>
+ <div class="sert">
+  <figure style="margin:0"><img src="images/sert-magang.jpg" alt="Sertifikat magang BPSDM Provinsi Jawa Barat"><figcaption class="cap">Sertifikat Magang BPSDM Provinsi Jawa Barat</figcaption></figure>
+  <figure style="margin:0"><img src="images/sert-toefl.jpg" alt="Sertifikat TOEFL Elskill English Course"><figcaption class="cap">Sertifikat TOEFL</figcaption></figure>
+ </div>
+</section>
+
+</main>
+<section class="end" id="kontak">
+ <h2>Terima Kasih</h2>
+ <img src="images/closing.jpg" alt="">
+ <div class="contact">
+  <a href="https://wa.me/6281022169305"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2"><circle cx="12" cy="12" r="10" fill="#fff"/><path d="M8 8c0 5 3 8 8 8l1-2-3-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-3z" fill="#111"/></svg>+6281022169305</a>
+  <a href="https://www.tiktok.com/@sarmelll"><svg viewBox="0 0 24 24"><rect width="24" height="24" rx="12" fill="#111"/><path d="M13 6v8.5a2 2 0 1 1-2-2M13 6c.3 2 1.5 3 3.500 3.2" fill="none" stroke="#fff" stroke-width="2"/></svg>@sarmelll</a>
+  <a href="https://www.instagram.com/sarahimeldaaaa"><svg viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5" fill="#fff"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1" fill="#111"/></svg>@sarahimeldaaaa</a>
+  <a href="mailto:sarahimelda26@gmail.com"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#111"/><path d="M6 8h12v8H6zM6 8l6 5 6-5" fill="none" stroke="#fff" stroke-width="1.5"/></svg>sarahimelda26@gmail.com</a>
+ </div>
+</section>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Pratinjau gambar"><button class="x" aria-label="Tutup">&times;</button><button class="pv" aria-label="Sebelumnya">&#8249;</button><img alt=""><button class="nx" aria-label="Berikutnya">&#8250;</button><p></p></div>
+<button id="top" aria-label="Kembali ke atas">&#8593;</button>
+<script>
+(function(){
+var $=function(q,c){return Array.prototype.slice.call((c||document).querySelectorAll(q))};
+var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+/* progres scroll + tombol ke atas */
+var bar=document.getElementById('bar'),top=document.getElementById('top');
+function sc(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight;bar.style.width=(m>0?h.scrollTop/m*100:0)+'%';top.classList.toggle('show',h.scrollTop>600)}
+addEventListener('scroll',sc,{passive:true});sc();
+top.onclick=function(){scrollTo({top:0,behavior:reduce?'auto':'smooth'})};
+/* menu aktif */
+var links=$('nav a'),secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
+var spy=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){var on=a.getAttribute('href')==='#'+e.target.id;a.classList.toggle('on',on);if(on){var u=a.parentNode.parentNode;u.scrollLeft=a.offsetLeft-(u.clientWidth-a.offsetWidth)/2}})}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(function(s){s&&spy.observe(s)});
+/* klik menu: scroll ke bagian */
+var navEl=document.querySelector('nav'),stop=false;
+['wheel','touchstart','keydown'].forEach(function(ev){addEventListener(ev,function(){stop=true},{passive:true})});
+function go(t){stop=false;var s0=pageYOffset,t0=performance.now(),dur=reduce?0:700;
+function off(){return Math.max(t.getBoundingClientRect().top+pageYOffset-navEl.offsetHeight+1,0)}
+(function step(now){if(stop)return;var k=dur?Math.min((now-t0)/dur,1):1,e=1-Math.pow(1-k,3);window.scrollTo(0,s0+(off()-s0)*e);if(k<1)requestAnimationFrame(step);else window.scrollTo(0,off())})(t0)}
+links.forEach(function(a){a.addEventListener('click',function(e){var t=document.querySelector(a.getAttribute('href'));if(!t)return;e.preventDefault();go(t);try{history.replaceState(null,'',a.getAttribute('href'))}catch(x){}})});
+/* muncul saat scroll */
+$('main section, .end h2').forEach(function(el){el.classList.add('rv')});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+$('.rv').forEach(function(el){io.observe(el)});
+/* animasi angka bahasa */
+$('.ring').forEach(function(r){var t=+r.style.getPropertyValue('--p'),b=r.querySelector('b');r.style.setProperty('--p',0);b.textContent='0%';
+new IntersectionObserver(function(es,o){if(!es[0].isIntersecting)return;o.disconnect();var st=null;(function f(ts){st=st||ts;var k=reduce?1:Math.min((ts-st)/1200,1),v=Math.round(t*(1-Math.pow(1-k,3)));r.style.setProperty('--p',v);b.textContent=v+'%';if(k<1)requestAnimationFrame(f)})(performance.now())},{threshold:.5}).observe(r)});
+/* pratinjau gambar */
+var imgs=$('main img').filter(function(i){return !i.closest('.tools,.logos')}),cur=0,lb=document.getElementById('lb'),li=lb.querySelector('img'),lc=lb.querySelector('p');
+function show(n){cur=(n+imgs.length)%imgs.length;var i=imgs[cur],f=i.closest('figure'),c=f&&f.querySelector('figcaption');li.src=i.src;li.alt=i.alt;lc.textContent=c?c.textContent:i.alt}
+function open(n){show(n);lb.classList.add('open');lb.querySelector('.x').focus()}
+function close(){lb.classList.remove('open')}
+imgs.forEach(function(i,n){i.classList.add('zoom');i.tabIndex=0;i.setAttribute('role','button');i.onclick=function(){open(n)};i.onkeydown=function(e){if(e.key==='Enter')open(n)}});
+lb.querySelector('.x').onclick=close;lb.querySelector('.pv').onclick=function(){show(cur-1)};lb.querySelector('.nx').onclick=function(){show(cur+1)};
+lb.onclick=function(e){if(e.target===lb)close()};
+addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
+})();
+</script>
+</body>
+</html>
